@@ -14,3 +14,65 @@
 .btn-outline-dark {
   @apply text-black hover:text-white bg-white hover:bg-black border border-black;
 }
+.btn-dark {
+  @apply text-white bg-black hover:bg-gray-700;
+}
+/* form */
+.form-control {
+  @apply placeholder:text-gray-400 focus:text-black border border-gray-200 focus:border-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-200 rounded px-3 py-1.5;
+}
+.form-select {
+  @apply text-black border border-gray-200 focus:border-blue-300 focus:outline-none focus:ring-4 focus:ring-blue-200 appearance-none rounded ps-3 pe-9 py-1.5;
+  background-image: url("/public/svg/angle-down-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  background-position: right 0.75rem center;
+}
+.form-check {
+  @apply block ps-6 mb-1;
+}
+.form-check-input[type="checkbox"] {
+  @apply appearance-none border border-gray-300 focus:border-blue-300 focus:ring-4 focus:ring-blue-200 rounded p-2 me-2 mt-1 float-left;
+  background-image: url("/public/svg/check-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url("/public/svg/check-solid.svg");
+}
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.form-check-input[type="radio"] {
+  @apply appearance-none border border-gray-300 focus:border-blue-300 focus:ring-4 focus:ring-blue-200 rounded p-2 me-2 mt-1 float-left;
+  background-image: url("/public/svg/circle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.form-check-input[type="radio"] {
+  @apply rounded-full;
+}
+.form-check-input:checked[type="radio"] {
+  background-image: url("/public/svg/circle-solid.svg");
+}
+.input-group {
+  @apply relative flex flex-wrap items-stretch w-full;
+}
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(
+    .form-floating
+  ) {
+  @apply focus:z-10 rounded-r-none;
+}
+.input-group > .form-control {
+  @apply relative flex-auto;
+  width: 1%;
+}
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  @apply relative rounded-l-none my-0 mr-0;
+}
