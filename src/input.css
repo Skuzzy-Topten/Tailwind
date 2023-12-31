@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* button */
+.btn {
+  @apply rounded px-3 py-1.5 mx-0.5 my-1;
+}
+.btn-sm {
+  @apply text-sm rounded px-2 py-1;
+}
+.btn-lg {
+  @apply text-xl rounded px-4 py-2;
+}
+.btn-outline-dark {
+  @apply text-black hover:text-white bg-white hover:bg-black border border-black;
+}
